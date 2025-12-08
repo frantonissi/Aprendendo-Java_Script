@@ -47,3 +47,44 @@ carro.buzina();
 document.getElementById("texto2").innerHTML = (carro.completo());
 document.getElementById("texto3").innerHTML = (carro.idade(2025));
 
+//EVENTOS:
+//onclick:
+function eventoClick(){
+    alert("Acionou um evento de click")
+    document.body.style.background = "yellow";
+}
+
+//ondblclick:
+function eventoDBLclick(){
+    alert("Acionou um evento de duplo click")
+    document.body.style.background = "blue";
+}
+
+//onmouseover e onmouseout
+function viraVermelho(){
+    let div = document.getElementById("teste");
+    div.style.backgroundColor = "red";
+
+}
+
+function viraAzul(){
+    let div = document.getElementById("teste");
+    div.style.backgroundColor = "blue"
+}
+
+//mousemove:
+function moveMouse(){
+    let p = document.getElementById("texto5");
+    //p.append("O mouse moveu :)")
+}
+//mousedown e mouseup
+function clicou(){
+    let p = document.getElementById("texto6");
+    p.append("Vc clicou!! ");
+}
+
+function soltouClique(){
+    let p = document.getElementById("texto7");
+    p.append("Soltou o clique bb! ");
+}
+
