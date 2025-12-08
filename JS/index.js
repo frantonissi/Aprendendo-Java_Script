@@ -87,4 +87,12 @@ function soltouClique(){
     let p = document.getElementById("texto7");
     p.append("Soltou o clique bb! ");
 }
+//onfocus:
+function limpaTexto(){
+    document.getElementById("campoTexto").value = ""
+}
 
+//onchange:
+function mudou(){
+    console.log('mudou');  
+}

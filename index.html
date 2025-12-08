@@ -10,7 +10,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="alert('terminou de carregar')">
 
     <h1>Aprendendo Java Script </h1>
     
@@ -33,11 +33,22 @@
     <button onclick = "helloword()"> clique aqui</button>
     <button onclick = "eventoClick()">Mude a cor ("onclick")</button>
     <button ondblclick="eventoDBLclick()">Mude a cor("ondblclick")</button>
-    
+
+    <select = onchange="mudou()">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>  
+    </select>
+    <br><br>
     <div onmousedown = "clicou()" onmouseup="soltouClique()" style="margin:auto auto; width: 80%; height: 200px; background:rgb(0, 0, 0);"> O que isso faz? </div>
 
 
     <div id = "teste"  onmousemove="moveMouse()" onmouseout = "viraAzul()" onmouseover="viraVermelho()" style="margin:auto auto; width: 80%; height: 200px; background:blue;"></div>
+
+    <input onfocus="limpaTexto()" id = "campoTexto" style="padding:80px; font-size: 40px;" type="text" placeholder="Digite alguma coisa:"
+    value="Ja vem com texto">
+
     <script src = "js/index.js">
     </script>
 
