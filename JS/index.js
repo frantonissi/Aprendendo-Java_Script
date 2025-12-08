@@ -24,4 +24,26 @@ document.getElementById("texto").innerHTML = soma(1, 99);
 function helloword(){
     alert("Olá amigos! ");
 }
-    
+//Objetos:
+const carro = {
+    marca:"chevrolet",
+    modelo:"onix",
+    ano:2024,
+    placa:"EJG0F32",
+    buzina: function () {alert('biiiiiiiiiiiiiii')},
+    completo: function(){
+        return "A marca é " +  this.marca + " e o modelo e "+this.modelo;
+    },
+    idade: function(atual){
+        var idade = atual - this.ano;
+        return "A idade do seu carro é " + idade + " ano";
+    }
+};
+
+console.log(carro);
+alert(carro.ano);
+document.getElementById("texto").innerHTML = (carro.modelo);
+carro.buzina();
+document.getElementById("texto2").innerHTML = (carro.completo());
+document.getElementById("texto3").innerHTML = (carro.idade(2025));
+
